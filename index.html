@@ -8,16 +8,25 @@
 
     <style>
         body{
+            background: linear-gradient(-45deg,white,rgb(106, 174, 206),black);
+            background-size: 400% 400%;
             margin: 0;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(54, 60, 61, 0.534);
             font-family: Arial, Helvetica, sans-serif;
             color: aliceblue;
+            animation: gradientBG 10s ease infinite;
 
-            }
+
+           }
+           
+        @keyframes gradientBG{
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
         
        .card{
         background-color: rgb(31, 30, 30);
@@ -57,6 +66,9 @@
        }
 
        .btn{
+        color: aliceblue;
+        background-color: rgb(173, 208, 231);
+        text-decoration: none;
         padding: 10px 18px;
         border-radius: 6px;
         border: 1px solid rgb(113, 189, 240);
@@ -103,6 +115,7 @@
         }
 
         .social-media i{
+            color: rgb(96, 153, 204);
             cursor: pointer;
             transition: 0.3s;
 
@@ -110,6 +123,16 @@
         .social-media i:hover{
             color: blue;
             transform: scale(1.2);
+        }
+        .social-media a{
+            text-decoration: none;
+            color: rgb(83, 156, 224);
+            
+        }
+        .social-media a:hover{
+            color: blue;
+            transform: scale(1.2);
+
         }
     </style>
 </head>
@@ -121,8 +144,8 @@
         <div class="job">Técnico em Informática<br>Estudante de Tecnologia</div>
          
         <div class="botoes">
-            <button class=" btn primario">Mensagem</button>
-            <button class=" btn secundario">Follow</button>
+            <a  href="https://wa" class="btn primario">Mensagem</a>
+            <a  href="#" class="btn secundario">Follow</a>
         </div>
          <div class="skills">
             <h3>Habilidades</h3>
@@ -139,10 +162,9 @@
          </div><br>
 
          <div class="social-media">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="https://github.com/GustaPhysic"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gustavo-r-3583713b3/"> <i class="fab fa-linkedin"></i></a>
+           <a href="https://www.instagram.com/gus_lwzx/"><i class="fab fa-instagram"></i></a>
 
          </div>
     </div>
